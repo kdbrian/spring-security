@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+spring:
+#  comment the code below or provide the application-dev.yaml file under resources
+  profiles:
+    active: dev
+  # static security config
+  #  security:
+  #    user:
+  #      name: admin
+  #      password: 1234
+  datasource:
+    url: # format jdbc:mysql://localhost:3306/springsec
+    username:
+    password:
+
+  jpa:
+    hibernate:
+      # for dev purposes
+      ddl-auto: create-drop
